@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/login.css">   
+</head>
+
+<body>
+
+    <a href="../index.html" class="homeBtn">
+        <span>← Home</span>
+    </a>
+
+    <div class="loginCard">
+        <h2>Sri Lankan Railway</h2>
+        
+        <form id="loginForm" novalidate>
+            
+            <div class="formGroup">
+                <label for="username">User Name:</label>
+                <input type="text" id="username" autocomplete="off" placeholder="Enter your Username" required>
+                <small id="userNameError"></small>
+            </div>
+            
+            <div class="formGroup">
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" autocomplete="off" placeholder="Enter your Password" required>
+                <small id="pwdError"></small>
+            </div>
+            
+            <button type="submit" class="loginBtn">Login</button>
+
+            <div class="regLink">
+                <small>Create New Account: <a href="register.html">Click here</a></small>
+            </div>
+            
+        </form>
+    </div>
+
+    <!-- <script src="../js/login.js"></script> -->
+    
+</body>
+</html> 

@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/train01.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- Back to Home Button --- */
+.homeBtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    color: #333333;
+    padding: 10px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    z-index: 10; /* Ensures it stays above the background */
+}
+
+.homeBtn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Card layout matching the snapshot */
+.loginCard {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(14, 34, 88, 0.5);
+}
+
+.loginCard h2 {
+    text-align: center;
+    color: rgb(14, 34, 88);
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 650;
+}
+
+.formGroup {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    color: #444444;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid rgba(14, 34, 88, 0.25);
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333333;
+    outline: none;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+/* Valid input state (Green) */
+input.valid {
+    border-color: #288F5F;
+}
+
+/* Invalid input state (Red) - matches the image state */
+input.invalid {
+    border-color: #e63946;
+    color: #e63946;
+}
+
+input.invalid + .error-message {
+    display: block;
+}
+
+/* Solid blue interactive button */
+.loginBtn {
+    width: 100%;
+    background-color: #0E2258;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin: 15px auto;
+}
+
+.loginBtn:hover {
+    background-color: #d4a934;
+}
+
+.regLink{
+    text-align: center;
+}
+
+.regLink a{
+    text-decoration: none;
+}
+
+#userNameError, #pwdError {
+    color: #e63946;
+    font-size: 12px;
+}
